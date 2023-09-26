@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Leaderboard</h1>
+        <button id="logout-button">Logout</button>
+    </header>
+    
+
+    <main class="leaderboard">
+        <!-- Button to open the create modal -->
+<button id="open-create-modal">Create New Entry</button>
+
+    <div class="create-form">
+        <div id="create-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-modal">&times;</span>
+                <h2>Create New Entry</h2>
+                <form id="create-form">
+                    <input type="text" id="create-name" placeholder="Name" required>
+                    <input type="number" id="create-score" placeholder="Score" required>
+                    <button type="submit">Create</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+        <h2>Top Performers</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    <!-- Leaderboard entries will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <button id="prev-page">Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-page">Next</button>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

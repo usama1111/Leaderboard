@@ -1,0 +1,186 @@
+/* Reset some default styles for a cleaner appearance */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the leaderboard */
+.leaderboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.leaderboard h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.leaderboard th, .leaderboard td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.leaderboard th {
+    background-color: #333;
+    color: white;
+}
+
+.leaderboard tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Enhanced styles for gaming appearance */
+.leaderboard table {
+    border: none;
+    border-spacing: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard th, .leaderboard td {
+    padding: 15px;
+}
+
+.leaderboard th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.leaderboard tr:nth-child(even) {
+    background-color: #5991c9;
+}
+
+.leaderboard tr:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.leaderboard td:last-child {
+    text-align: center;
+}
+
+.leaderboard button {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.leaderboard button:hover {
+    background-color: #c0392b;
+}
+
+.leaderboard input[type="text"],
+.leaderboard input[type="number"] {
+    padding: 8px;
+    width: 100%;
+}
+
+.leaderboard input[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.leaderboard input[type="submit"]:hover {
+    background-color: #219f56;
+}
+
+/* Style the "Create New Entry" button */
+#create-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px; /* Add some spacing below the button */
+}
+
+#create-button:hover {
+    background-color: #219f56;
+}
+button:hover {
+    background-color: #0056b3;
+}
+/* Styles for the modal and overlay */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Add more styling as needed */
+/* Style the logout button */
+#logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#logout-button:hover {
+    background-color: #c0392b;
+}
